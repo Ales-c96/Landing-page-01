@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    body {
+        transition: .3s ease all;
+        scroll-behavior: smooth;
+    }
+    :root {
+        --color-primary: 30 41 59;
+        --color-secondary: 255 255 255;
+    }
+
+    [data-theme='dark'] {
+        --color-primary: 244 242 233;
+        --color-secondary: 0 0 0;
+    }
+
+}
