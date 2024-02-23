@@ -10,18 +10,34 @@
     the digital age."
     />
     <script src="https://kit.fontawesome.com/c2084c8c3a.js" crossorigin="anonymous"></script>
+    <script
+      src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+      integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
+      crossorigin=""
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+      integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
+      crossorigin=""
+    />
     <link rel="stylesheet" href="./build/style.css" />
     <link rel="stylesheet" href="../src/style.css" />
     <title>Digitaliz - Make your business grow</title>
   </head>
-  <body class="h-screen bg-primary">
+  <body class="bg-primary">
     <!-- NAVBAR -->
-    <nav class="w-full flex justify-between p-5 bg-slate-900 shadow-md fixed top-0 z-10">
+    <nav class="w-full flex justify-between p-5 md:px-32 bg-slate-900 shadow-md fixed top-0 z-10">
       <a href="#" class="text-white text-lg z-10 font-semibold">Digitaliz</a>
-      <div class="flex items-center justify-between z-10">
-        <div class="block lg:hidden">
+      <div class="lg:hidden flex items-center justify-between z-10">
+        <div>
           <button id="botonMenu" class="text-white focus:outline-none">
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <svg
+              class="h-6 w-6 cursor-pointer"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
               <path
                 stroke-linecap="round"
                 stroke-linejoin="round"
@@ -64,16 +80,16 @@
           alt="imagen de gente en una reunión"
           class="hidden md:block w-2/4 h-auto rounded-md"
         />
-        <div>
+        <div class="w-1/2">
           <div class="mb-5">
-            <h1 class="text-white font-bold text-4xl md:text-8xl mb-2 md:mb-10">
+            <h1 class="text-white font-bold text-4xl md:text-6xl mb-2 md:mb-10">
               We are Digitalizers
             </h1>
             <p class="text-white md:text-2xl md:mt-4 md:mb-10 md:w-2/4">
               Transforming business with innovative digital marketing
             </p>
           </div>
-          <div class="w-full">
+          <div>
             <a
               href="#contact"
               class="bg-blue-600 hover:bg-blue-700 text-white font-bold md:text-3xl rounded-md px-3 py-1"
@@ -84,7 +100,7 @@
         </div>
       </section>
       <!-- ABOUT -->
-      <section id="about" class="p-5 md:mb-16">
+      <section id="about" class="p-5 md:mb-2">
         <div class="mb-5">
           <div class="w-full flex items-center gap-3">
             <h2 class="min-w-fit text-secondary font-bold text-2xl mb-4 md:text-5xl">About Us</h2>
@@ -104,6 +120,8 @@
           </p>
         </div>
       </section>
+      <!-- TESTIMONOS -->
+      <section class="hidden md:block"></section>
       <!-- SERVICES -->
       <section id="services" class="p-5 md:mb-16">
         <div class="mb-5">
@@ -120,29 +138,29 @@
           <div
             class="h-40 p-2 bg-slate-700 border-solid border-2 border-slate-500 rounded-md bg-[url('../../assets/img/seo.webp')] bg-cover bg-center"
           >
-            <p class="text-white font-semibold mb-1">SEO</p>
-            <p class="text-white text-sm font-thin">Drive quality traffic to your website</p>
+            <p class="text-white font-semibold mb-1 md:text-lg">SEO</p>
+            <p class="text-white text-sm md:text-lg font-thin md:font-bold">Drive quality traffic to your website</p>
           </div>
           <div
             class="h-40 p-2 bg-slate-700 border-solid border-2 border-slate-500 rounded-md bg-[url('../../assets/img/pcc.webp')] bg-cover bg-center"
           >
-            <p class="text-white font-semibold mb-1">PCC</p>
-            <p class="text-white text-sm font-thin">Increase your sales and leads</p>
+            <p class="text-white font-semibold mb-1 md:text-lg">PCC</p>
+            <p class="text-white text-sm md:text-lg font-thin md:font-bold">Increase your sales and leads</p>
           </div>
 
           <div
             class="h-40 p-2 bg-slate-700 border-solid border-2 border-slate-500 rounded-md bg-[url('../../assets/img/social_media.webp')] bg-cover bg-center"
           >
-            <p class="text-white font-semibold mb-1">Social Media</p>
-            <p class="text-white text-sm font-thin">
+            <p class="text-white font-semibold mb-1 md:text-lg">Social Media</p>
+            <p class="text-white text-sm md:text-lg font-thin md:font-bold">
               Build brand awareness and customer engagement
             </p>
           </div>
           <div
             class="h-40 p-2 bg-slate-700 border-solid border-2 border-slate-500 rounded-md bg-[url('../../assets/img/dev.webp')] bg-cover bg-center"
           >
-            <p class="text-white font-semibold mb-1">Web Development</p>
-            <p class="text-white text-sm font-thin">Build interactive and modern webs.</p>
+            <p class="text-white font-semibold mb-1 md:text-lg">Web Development</p>
+            <p class="text-white text-sm md:text-lg font-thin md:font-bold">Build interactive and modern webs.</p>
           </div>
         </div>
       </section>
@@ -179,7 +197,12 @@
         <div class="my-5 dropdown-btn">
           <!-- Botón del desplegable -->
           <span class="text-secondary font-semibold md:cursor-pointer">Strategic Approach:</span>
-          <svg class="w-4 h-4 inline ml-1" fill="#fff" viewBox="0 0 24 24" stroke="currentColor">
+          <svg
+            class="w-4 h-4 inline ml-1 cursor-pointer"
+            fill="#fff"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -203,7 +226,12 @@
         <div class="my-5 dropdown-btn">
           <!-- Botón del desplegable -->
           <span class="text-secondary font-semibold md:cursor-pointer">Proven Track Record:</span>
-          <svg class="w-4 h-4 inline ml-1" fill="#fff" viewBox="0 0 24 24" stroke="currentColor">
+          <svg
+            class="w-4 h-4 inline ml-1 cursor-pointer"
+            fill="#fff"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -227,7 +255,12 @@
         <div class="my-5 dropdown-btn">
           <!-- Botón del desplegable -->
           <span class="text-secondary font-semibold md:cursor-pointer">Data-Driven Insights:</span>
-          <svg class="w-4 h-4 inline ml-1" fill="#fff" viewBox="0 0 24 24" stroke="currentColor">
+          <svg
+            class="w-4 h-4 inline ml-1 cursor-pointer"
+            fill="#fff"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -252,7 +285,12 @@
           <span class="text-secondary font-semibold md:cursor-pointer"
             >Innovation and Adaptability:</span
           >
-          <svg class="w-4 h-4 inline ml-1" fill="#fff" viewBox="0 0 24 24" stroke="currentColor">
+          <svg
+            class="w-4 h-4 inline ml-1 cursor-pointer"
+            fill="#fff"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
@@ -284,55 +322,58 @@
           <h2 class="min-w-fit text-secondary font-bold text-2xl mb-4 md:text-5xl">Contact Us</h2>
           <div class="w-full h-1 border-b bg-primary hidden md:block"></div>
         </div>
-        <form action="" class="flex flex-col gap-3">
-          <div class="flex flex-col">
-            <label for="name"></label>
+        <div class="flex gap-5 h-80">
+          <form action="" class="flex flex-col gap-3 w-full md:w-2/4">
+            <div class="flex flex-col  ">
+              <label for="name"></label>
+              <input
+                type="text"
+                name="name"
+                id="name"
+                placeholder="Name"
+                class="rounded-md p-1 border-secondary border-2"
+              />
+            </div>
+            <div class="flex flex-col">
+              <label for="email"></label>
+              <input
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email"
+                class="rounded-md p-1 border-secondary border-2"
+              />
+            </div>
+            <div class="flex flex-col">
+              <label for="company"></label>
+              <input
+                type="text"
+                name="company"
+                id="company"
+                placeholder="Company"
+                class="rounded-md p-1 border-secondary border-2"
+              />
+            </div>
+            <div class="flex flex-col">
+              <label for="mesage"></label>
+              <textarea
+                name="mesage"
+                id="mesage"
+                rows="5"
+                placeholder="Mesage"
+                class="rounded-md p-1 resize-none border-secondary border-2"
+              ></textarea>
+            </div>
             <input
-              type="text"
-              name="name"
-              id="name"
-              placeholder="Name"
-              class="rounded-md p-1 border-secondary border-2 md:w-2/4"
+              type="submit"
+              name=""
+              id=""
+              value="Send"
+              class="bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-md px-3 py-1 md:text-1xl cursor-pointer"
             />
-          </div>
-          <div class="flex flex-col">
-            <label for="email"></label>
-            <input
-              type="email"
-              name="email"
-              id="email"
-              placeholder="Email"
-              class="rounded-md p-1 border-secondary border-2 md:w-2/4"
-            />
-          </div>
-          <div class="flex flex-col">
-            <label for="company"></label>
-            <input
-              type="text"
-              name="company"
-              id="company"
-              placeholder="Company"
-              class="rounded-md p-1 border-secondary border-2 md:w-2/4"
-            />
-          </div>
-          <div class="flex flex-col">
-            <label for="mesage"></label>
-            <textarea
-              name="mesage"
-              id="mesage"
-              rows="5"
-              placeholder="Mesage"
-              class="rounded-md p-1 resize-none border-secondary border-2 md:w-2/4"
-            ></textarea>
-          </div>
-          <input
-            type="submit"
-            name=""
-            id=""
-            value="Send"
-            class="bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-md px-3 py-1 md:text-1xl md:w-2/4 cursor-pointer"
-          />
-        </form>
+          </form>
+          <div id="map" class="hidden md:block md:w-2/4 h-full rounded-md"></div>
+        </div>
       </section>
     </main>
     <!-- FOOTER -->

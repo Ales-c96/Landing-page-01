@@ -62,4 +62,14 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+
+  // MAP leaflet
+  let map = L.map("map").setView([40.4168, -3.7038], 15);
+  L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
+    attribution:
+      '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors',
+  }).addTo(map);
+
+  L.marker([40.4168, -3.7038]).addTo(map);
+  L.marker([40.4168, -3.7038]).addTo(map).bindPopup("Puerta del Sol");
 });
