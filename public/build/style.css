@@ -715,10 +715,6 @@ body {
   height: 100%;
 }
 
-.w-1\/2 {
-  width: 50%;
-}
-
 .w-2\/4 {
   width: 50%;
 }
@@ -1053,11 +1049,11 @@ body {
     display: none;
   }
 
-  .md\:w-2\/4 {
+  .md\:w-1\/2 {
     width: 50%;
   }
 
-  .md\:w-1\/2 {
+  .md\:w-2\/4 {
     width: 50%;
   }
 
