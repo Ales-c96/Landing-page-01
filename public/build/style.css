@@ -601,28 +601,12 @@ body {
   position: fixed;
 }
 
-.absolute {
-  position: absolute;
-}
-
-.relative {
-  position: relative;
-}
-
 .right-0 {
   right: 0px;
 }
 
 .top-0 {
   top: 0px;
-}
-
-.bottom-0 {
-  bottom: 0px;
-}
-
-.left-0 {
-  left: 0px;
 }
 
 .z-10 {
@@ -699,6 +683,10 @@ body {
   display: none;
 }
 
+.h-1 {
+  height: 0.25rem;
+}
+
 .h-4 {
   height: 1rem;
 }
@@ -711,40 +699,28 @@ body {
   height: 1.5rem;
 }
 
-.h-96 {
-  height: 24rem;
-}
-
-.h-screen {
-  height: 100vh;
-}
-
-.h-24 {
-  height: 6rem;
-}
-
-.h-20 {
-  height: 5rem;
-}
-
 .h-80 {
   height: 20rem;
 }
 
-.h-32 {
-  height: 8rem;
-}
-
-.h-full {
-  height: 100%;
+.h-96 {
+  height: 24rem;
 }
 
 .h-auto {
   height: auto;
 }
 
-.h-1 {
-  height: 0.25rem;
+.h-full {
+  height: 100%;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
+.w-2\/4 {
+  width: 50%;
 }
 
 .w-4 {
@@ -757,50 +733,6 @@ body {
 
 .w-full {
   width: 100%;
-}
-
-.w-32 {
-  width: 8rem;
-}
-
-.w-96 {
-  width: 24rem;
-}
-
-.w-40 {
-  width: 10rem;
-}
-
-.w-48 {
-  width: 12rem;
-}
-
-.w-2\/4 {
-  width: 50%;
-}
-
-.w-svw {
-  width: 100svw;
-}
-
-.w-dvw {
-  width: 100dvw;
-}
-
-.w-lvw {
-  width: 100lvw;
-}
-
-.w-screen {
-  width: 100vw;
-}
-
-.w-1\/3 {
-  width: 33.333333%;
-}
-
-.w-2\/3 {
-  width: 66.666667%;
 }
 
 .min-w-fit {
@@ -880,14 +812,6 @@ body {
   border-width: 2px;
 }
 
-.border {
-  border-width: 1px;
-}
-
-.border-b-2 {
-  border-bottom-width: 2px;
-}
-
 .border-b {
   border-bottom-width: 1px;
 }
@@ -904,11 +828,6 @@ body {
 .border-slate-500 {
   --tw-border-opacity: 1;
   border-color: rgb(100 116 139 / var(--tw-border-opacity));
-}
-
-.border-primary {
-  --tw-border-opacity: 1;
-  border-color: rgb(var(--color-primary) / var(--tw-border-opacity));
 }
 
 .bg-blue-600 {
@@ -936,20 +855,20 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'\.\.\/\.\.\/assets\/img\/dev\.webp\'\)\] {
-  background-image: url('../../assets/img/dev.webp');
+.bg-\[url\(\'https\:\/\/c1prowbmhyo8n8ks\.public\.blob\.vercel-storage\.com\/landing\/dev-V7WPoUoxpfv2DB520O6YaA3rkphhPb\.webp\'\)\] {
+  background-image: url('https://c1prowbmhyo8n8ks.public.blob.vercel-storage.com/landing/dev-V7WPoUoxpfv2DB520O6YaA3rkphhPb.webp');
 }
 
-.bg-\[url\(\'\.\.\/\.\.\/assets\/img\/pcc\.webp\'\)\] {
-  background-image: url('../../assets/img/pcc.webp');
+.bg-\[url\(\'https\:\/\/c1prowbmhyo8n8ks\.public\.blob\.vercel-storage\.com\/landing\/pcc-UkfEeYXNvCgkeg05eVRsUYV7yuNKCN\.webp\'\)\] {
+  background-image: url('https://c1prowbmhyo8n8ks.public.blob.vercel-storage.com/landing/pcc-UkfEeYXNvCgkeg05eVRsUYV7yuNKCN.webp');
 }
 
-.bg-\[url\(\'\.\.\/\.\.\/assets\/img\/seo\.webp\'\)\] {
-  background-image: url('../../assets/img/seo.webp');
+.bg-\[url\(\'https\:\/\/c1prowbmhyo8n8ks\.public\.blob\.vercel-storage\.com\/landing\/seo-bN8j13WL48iSQzc0vMAN3J6lPXIBxH\.webp\'\)\] {
+  background-image: url('https://c1prowbmhyo8n8ks.public.blob.vercel-storage.com/landing/seo-bN8j13WL48iSQzc0vMAN3J6lPXIBxH.webp');
 }
 
-.bg-\[url\(\'\.\.\/\.\.\/assets\/img\/social_media\.webp\'\)\] {
-  background-image: url('../../assets/img/social_media.webp');
+.bg-\[url\(\'https\:\/\/c1prowbmhyo8n8ks\.public\.blob\.vercel-storage\.com\/landing\/social_media-CerVdnqpRTpgvQdbQkmMxpQ5V34qPo\.webp\'\)\] {
+  background-image: url('https://c1prowbmhyo8n8ks.public.blob.vercel-storage.com/landing/social_media-CerVdnqpRTpgvQdbQkmMxpQ5V34qPo.webp');
 }
 
 .bg-cover {
@@ -1097,23 +1016,21 @@ body {
   outline-offset: 2px;
 }
 
-@media (min-width: 640px) {
-  .sm\:hidden {
-    display: none;
-  }
-}
-
 @media (min-width: 768px) {
-  .md\:mt-10 {
-    margin-top: 2.5rem;
+  .md\:mb-10 {
+    margin-bottom: 2.5rem;
   }
 
-  .md\:mt-40 {
-    margin-top: 10rem;
+  .md\:mb-16 {
+    margin-bottom: 4rem;
   }
 
-  .md\:mt-72 {
-    margin-top: 18rem;
+  .md\:mb-2 {
+    margin-bottom: 0.5rem;
+  }
+
+  .md\:mb-8 {
+    margin-bottom: 2rem;
   }
 
   .md\:mt-28 {
@@ -1122,54 +1039,6 @@ body {
 
   .md\:mt-4 {
     margin-top: 1rem;
-  }
-
-  .md\:mb-4 {
-    margin-bottom: 1rem;
-  }
-
-  .md\:mb-8 {
-    margin-bottom: 2rem;
-  }
-
-  .md\:mb-10 {
-    margin-bottom: 2.5rem;
-  }
-
-  .md\:mb-40 {
-    margin-bottom: 10rem;
-  }
-
-  .md\:-mb-36 {
-    margin-bottom: -9rem;
-  }
-
-  .md\:mb-36 {
-    margin-bottom: 9rem;
-  }
-
-  .md\:mb-2 {
-    margin-bottom: 0.5rem;
-  }
-
-  .md\:mb-24 {
-    margin-bottom: 6rem;
-  }
-
-  .md\:mb-32 {
-    margin-bottom: 8rem;
-  }
-
-  .md\:mb-20 {
-    margin-bottom: 5rem;
-  }
-
-  .md\:mb-16 {
-    margin-bottom: 4rem;
-  }
-
-  .md\:mt-16 {
-    margin-top: 4rem;
   }
 
   .md\:mt-8 {
@@ -1185,6 +1054,10 @@ body {
   }
 
   .md\:w-2\/4 {
+    width: 50%;
+  }
+
+  .md\:w-1\/2 {
     width: 50%;
   }
 
@@ -1204,54 +1077,17 @@ body {
     justify-content: flex-start;
   }
 
-  .md\:justify-center {
-    justify-content: center;
-  }
-
   .md\:justify-evenly {
     justify-content: space-evenly;
-  }
-
-  .md\:gap-40 {
-    gap: 10rem;
-  }
-
-  .md\:gap-20 {
-    gap: 5rem;
   }
 
   .md\:gap-16 {
     gap: 4rem;
   }
 
-  .md\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .md\:py-4 {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-  }
-
-  .md\:text-5xl {
-    font-size: 3rem;
-    line-height: 1;
-  }
-
-  .md\:text-8xl {
-    font-size: 6rem;
-    line-height: 1;
-  }
-
-  .md\:text-7xl {
-    font-size: 4.5rem;
-    line-height: 1;
-  }
-
-  .md\:text-xl {
-    font-size: 1.25rem;
-    line-height: 1.75rem;
+  .md\:px-32 {
+    padding-left: 8rem;
+    padding-right: 8rem;
   }
 
   .md\:text-2xl {
@@ -1259,14 +1095,14 @@ body {
     line-height: 2rem;
   }
 
-  .md\:text-4xl {
-    font-size: 2.25rem;
-    line-height: 2.5rem;
+  .md\:text-3xl {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
   }
 
-  .md\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
   }
 
   .md\:text-6xl {
@@ -1274,9 +1110,17 @@ body {
     line-height: 1;
   }
 
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .md\:text-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+
+  .md\:font-bold {
+    font-weight: 700;
+  }
+
+  .md\:font-medium {
+    font-weight: 500;
   }
 }
 
