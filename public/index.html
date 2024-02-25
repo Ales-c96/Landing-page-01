@@ -27,53 +27,67 @@
   </head>
   <body class="bg-primary">
     <!-- NAVBAR -->
-    <nav class="w-full flex justify-between p-5 md:px-32 bg-slate-900 shadow-md fixed top-0 z-10">
-      <a href="#" class="text-white text-lg z-10 font-semibold">DigitalizMK</a>
-      <div class="lg:hidden flex items-center justify-between z-10">
-        <div>
-          <button id="botonMenu" class="text-white focus:outline-none">
-            <svg
-              class="h-6 w-6 cursor-pointer"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M4 6h16M4 12h16m-7 6h7"
-              ></path>
-            </svg>
-          </button>
+    <nav class="fixed top-0 left-0 w-full bg-gray-900 text-white">
+      <div class="container mx-auto flex justify-between items-center px-4 py-3 md:py-5">
+        <a href="#" class="text-white text-lg md:text-4xl z-10 font-semibold">DigitalizMK</a>
+        <div class="lg:hidden flex items-center justify-between z-10">
+          <div>
+            <button id="botonMenu" class="text-white focus:outline-none">
+              <svg
+                class="h-6 w-6 cursor-pointer"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M4 6h16M4 12h16m-7 6h7"
+                ></path>
+              </svg>
+            </button>
+          </div>
         </div>
-      </div>
-      <!-- Menú de navegación (visible en dispositivos de escritorio) -->
-      <div id="menu" class="hidden lg:block mt-4 lg:mt-0">
-        <ul class="text-white">
-          <li class="inline-block mr-4"><a href="#about">About</a></li>
-          <li class="inline-block mr-4"><a href="#services">Services</a></li>
-          <li class="inline-block mr-4"><a href="#contact">Contact</a></li>
-        </ul>
-      </div>
-      <!-- Menú hamburguesa para dispositivos móviles -->
-      <div
-        id="menuMovil"
-        class="w-full hidden opacity-0 transition ease-out duration-300 fixed right-0 p-6 bg-slate-900 lg:hidden"
-      >
-        <ul class="text-white text-right font-bold">
-          <li class="block mb-2"><a href="#about">About</a></li>
-          <li class="block mb-2"><a href="#services">Services</a></li>
-          <li class="block mb-2"><a href="#contact">Contact</a></li>
-          <li class="block mb-2 themeSelector"></li>
-        </ul>
+        <!-- Menú de navegación (visible en dispositivos de escritorio) -->
+        <div id="menu" class="hidden lg:block mt-4 lg:mt-0">
+          <ul class="text-white">
+            <li class="inline-block mr-4 hover:text-blue-500 transition-colors">
+              <a href="#about">About</a>
+            </li>
+            <li class="inline-block mr-4 hover:text-blue-500 transition-colors">
+              <a href="#services">Services</a>
+            </li>
+            <li class="inline-block mr-4 hover:text-blue-500 transition-colors">
+              <a href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Menú hamburguesa para dispositivos móviles -->
+        <div
+          id="menuMovil"
+          class="w-full hidden opacity-0 transition ease-out duration-300 fixed right-0 p-6 bg-slate-900 lg:hidden"
+        >
+          <ul class="text-white text-right font-bold">
+            <li class="block mb-2 hover:text-blue-500 transition-colors">
+              <a href="#about">About</a>
+            </li>
+            <li class="block mb-2 hover:text-blue-500 transition-colors">
+              <a href="#services">Services</a>
+            </li>
+            <li class="block mb-2 hover:text-blue-500 transition-colors">
+              <a href="#contact">Contact</a>
+            </li>
+            <li class="block mb-2 themeSelector"></li>
+          </ul>
+        </div>
       </div>
     </nav>
     <!-- MAIN -->
     <main class="container mx-auto">
       <!-- HEADING -->
       <section
-        class="w-full h-96 p-5 mb-5 md:mt-28 md:mb-16 flex justify-end md:justify-start items-center flex-col md:flex-row gap-4 md:gap-16 bg-mobile"
+        class="w-full h-96 p-5 mb-5 md:mt-32 md:mb-32 flex justify-end md:justify-start items-center flex-col md:flex-row gap-4 md:gap-16 bg-mobile"
       >
         <img
           src="https://c1prowbmhyo8n8ks.public.blob.vercel-storage.com/landing/officewhite-aOmwOMZWaMsgwWtTnRTZS5cZTmg0wI.webp"
@@ -92,7 +106,7 @@
           <div>
             <a
               href="#contact"
-              class="bg-blue-600 hover:bg-blue-700 text-white font-bold md:text-3xl rounded-md px-3 py-1"
+              class="bg-blue-600 hover:bg-blue-700 transition-all text-white font-bold md:text-3xl rounded-md px-3 py-1"
             >
               Contact Us
             </a>
@@ -100,28 +114,125 @@
         </div>
       </section>
       <!-- ABOUT -->
-      <section id="about" class="p-5 md:mb-2">
+      <section id="about" class="p-5">
         <div class="mb-5">
           <div class="w-full flex items-center gap-3">
             <h2 class="min-w-fit text-secondary font-bold text-2xl mb-4 md:text-5xl">About Us</h2>
             <div class="w-full h-1 border-b bg-primary hidden md:block"></div>
           </div>
-          <p class="text-secondary md:text-lg">
-            At <strong class="text-blue-500">DigitalizMK</strong>, we are passionate about digital
-            transformation. With a commitment to innovation and cutting-edge technology, we
-            specialize in helping businesses thrive in the digital age. Our team of experts brings
-            together a wealth of experience in software development, digital marketing, and IT
-            consulting. We pride ourselves on our ability to understand our clients' unique needs
-            and provide tailored solutions that drive growth and success. From developing custom
-            software applications to implementing comprehensive digital marketing strategies, we are
-            dedicated to delivering results that exceed expectations. Our goal is to empower
-            businesses to embrace digital innovation and unlock their full potential in today's
-            fast-paced digital landscape.
-          </p>
+          <div class="flex items-center justify-center gap-20">
+            <p class="text-secondary md:text-lg md:mt-2 md:w-1/2 leter lg:leading-loose">
+              At <strong class="text-blue-500">DigitalizMK</strong>, we are passionate about digital
+              transformation. With a commitment to innovation and cutting-edge technology, we
+              specialize in helping businesses thrive in the digital age. Our team of experts brings
+              together a wealth of experience in software development, digital marketing, and IT
+              consulting. We pride ourselves on our ability to understand our clients' unique needs
+              and provide tailored solutions that drive growth and success. From developing custom
+              software applications to implementing comprehensive digital marketing strategies, we
+              are dedicated to delivering results that exceed expectations. Our goal is to empower
+              businesses to embrace digital innovation and unlock their full potential in today's
+              fast-paced digital landscape.
+            </p>
+            <img
+              class="w-1/2 h-auto rounded-md shadow-md hidden lg:block"
+              src="https://c1prowbmhyo8n8ks.public.blob.vercel-storage.com/landing/pexels-building-QhABNvPi7gaYREbYABlFmb072Q62bO.webp"
+              alt=""
+            />
+          </div>
         </div>
       </section>
       <!-- TESTIMONOS -->
-      <section class="hidden md:block"></section>
+      <section class="p-5 md:mb-16">
+        <div class="w-full flex items-center gap-3">
+          <h2 class="min-w-fit text-secondary font-bold text-2xl mb-4 md:text-5xl">Testimonies</h2>
+          <div class="w-full h-1 border-b bg-primary hidden md:block"></div>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-8">
+          <!-- Caja 1 -->
+          <div class="bg-slate-900 border-solid border-2 border-slate-500 rounded-lg p-4 shadow-md">
+            <div class="w-full flex justify-start items-center gap-8">
+              <div
+                class="rounded-full mb-2 overflow-hidden w-16 h-16 flex items-center justify-center bg-white"
+              >
+                <img
+                  src="https://c1prowbmhyo8n8ks.public.blob.vercel-storage.com/landing/pexels-linkedin-sales-navigator-2182970-e79q4jBIWPkXMaDB5TXkzB3kzyS5UM.webp"
+                  alt="Foto 1"
+                  class="w-16 h-auto rounded-md mb-2"
+                />
+              </div>
+              <h2 class="text-xl text-white font-semibold mb-2">John Doe</h2>
+            </div>
+            <p class="text-gray-400 mt-3">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum explicabo officia,
+              amet hic non culpa atque eligendi voluptates dolores molestiae similique, vero quae
+              totam nihil adipisci molestias laudantium nemo quia?
+            </p>
+          </div>
+
+          <!-- Caja 2 -->
+          <div class="bg-slate-900 border-solid border-2 border-slate-500 rounded-lg p-4 shadow-md">
+            <div class="w-full flex justify-start items-center gap-8">
+              <div
+                class="rounded-full mb-2 overflow-hidden w-16 h-16 flex items-center justify-center bg-white"
+              >
+                <img
+                  src="https://c1prowbmhyo8n8ks.public.blob.vercel-storage.com/landing/pexels-christina-morillo-1181686-yRYUlS6idHSjUtbMCSIwxuhX0HTCoQ.webp"
+                  alt="Foto 1"
+                  class="w-16 h-auto rounded-md mb-2"
+                />
+              </div>
+              <h2 class="text-xl text-white font-semibold mb-2">Catherin Williams</h2>
+            </div>
+            <p class="text-gray-400 mt-3">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum explicabo officia,
+              amet hic non culpa atque eligendi voluptates dolores molestiae similique, vero quae
+              totam nihil adipisci molestias laudantium nemo quia?
+            </p>
+          </div>
+
+          <!-- Caja 3 -->
+          <div class="bg-slate-900 border-solid border-2 border-slate-500 rounded-lg p-4 shadow-md">
+            <div class="w-full flex justify-start items-center gap-8">
+              <div
+                class="rounded-full mb-2 overflow-hidden w-16 h-16 flex items-center justify-center bg-white"
+              >
+                <img
+                  src="https://c1prowbmhyo8n8ks.public.blob.vercel-storage.com/landing/pexels-andrea-piacquadio-733872-iPlbcnXTumeOa8CyyQQC7GgBPSpFpm.webp"
+                  alt="Foto 1"
+                  class="w-16 h-auto rounded-md mb-2"
+                />
+              </div>
+              <h2 class="text-xl text-white font-semibold mb-2">Crisitine Gonzalez</h2>
+            </div>
+            <p class="text-gray-400 mt-3">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum explicabo officia,
+              amet hic non culpa atque eligendi voluptates dolores molestiae similique, vero quae
+              totam nihil adipisci molestias laudantium nemo quia?
+            </p>
+          </div>
+
+          <!-- Caja 4 -->
+          <div class="bg-slate-900 border-solid border-2 border-slate-500 rounded-lg p-4 shadow-md">
+            <div class="w-full flex justify-start items-center gap-8">
+              <div
+                class="rounded-full mb-2 overflow-hidden w-16 h-16 flex items-center justify-center bg-white"
+              >
+                <img
+                  src="https://c1prowbmhyo8n8ks.public.blob.vercel-storage.com/landing/pexels-polina-tankilevitch-5473391-EItL25SHAmmw2eFg6tUB2lAJICB7Du.webp"
+                  alt="Foto 1"
+                  class="w-16 h-auto rounded-md mb-2"
+                />
+              </div>
+              <h2 class="text-xl text-white font-semibold mb-2">Olivia Smith</h2>
+            </div>
+            <p class="text-gray-400 mt-3">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum explicabo officia,
+              amet hic non culpa atque eligendi voluptates dolores molestiae similique, vero quae
+              totam nihil adipisci molestias laudantium nemo quia?
+            </p>
+          </div>
+        </div>
+      </section>
       <!-- SERVICES -->
       <section id="services" class="p-5 md:mb-16">
         <div class="mb-5">
@@ -139,13 +250,17 @@
             class="h-40 p-2 bg-slate-700 border-solid border-2 border-slate-500 rounded-md bg-[url('https://c1prowbmhyo8n8ks.public.blob.vercel-storage.com/landing/seo-bN8j13WL48iSQzc0vMAN3J6lPXIBxH.webp')] bg-cover bg-center"
           >
             <p class="text-white font-semibold mb-1 md:text-2xl md:font-bold">SEO</p>
-            <p class="text-white text-sm md:text-lg font-thin md:font-medium">Drive quality traffic to your website</p>
+            <p class="text-white text-sm md:text-lg font-thin md:font-medium">
+              Drive quality traffic to your website
+            </p>
           </div>
           <div
             class="h-40 p-2 bg-slate-700 border-solid border-2 border-slate-500 rounded-md bg-[url('https://c1prowbmhyo8n8ks.public.blob.vercel-storage.com/landing/pcc-UkfEeYXNvCgkeg05eVRsUYV7yuNKCN.webp')] bg-cover bg-center"
           >
             <p class="text-white font-semibold mb-1 md:text-2xl md:font-bold">PCC</p>
-            <p class="text-white text-sm md:text-lg font-thin md:font-medium">Increase your sales and leads</p>
+            <p class="text-white text-sm md:text-lg font-thin md:font-medium">
+              Increase your sales and leads
+            </p>
           </div>
 
           <div
@@ -160,7 +275,9 @@
             class="h-40 p-2 bg-slate-700 border-solid border-2 border-slate-500 rounded-md bg-[url('https://c1prowbmhyo8n8ks.public.blob.vercel-storage.com/landing/dev-V7WPoUoxpfv2DB520O6YaA3rkphhPb.webp')] bg-cover bg-center"
           >
             <p class="text-white font-semibold mb-1 md:text-2xl md:font-bold">Web Development</p>
-            <p class="text-white text-sm md:text-lg font-thin md:font-medium">Build interactive and modern webs.</p>
+            <p class="text-white text-sm md:text-lg font-thin md:font-medium">
+              Build interactive and modern webs.
+            </p>
           </div>
         </div>
       </section>
@@ -173,7 +290,7 @@
           </p>
           <a
             href="#contact"
-            class="bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-md px-3 py-1 md:text-3xl"
+            class="bg-blue-600 hover:bg-blue-700 transition-all text-white font-bold rounded-md px-3 py-1 md:text-3xl"
           >
             Get Started
           </a>
@@ -324,7 +441,7 @@
         </div>
         <div class="flex gap-5 h-80">
           <form action="" class="flex flex-col gap-3 w-full md:w-2/4">
-            <div class="flex flex-col  ">
+            <div class="flex flex-col">
               <label for="name"></label>
               <input
                 type="text"
@@ -369,7 +486,7 @@
               name=""
               id=""
               value="Send"
-              class="bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-md px-3 py-1 md:text-1xl cursor-pointer"
+              class="bg-blue-600 hover:bg-blue-700 transition-al text-white font-bold rounded-md px-3 py-1 md:text-1xl cursor-pointer"
             />
           </form>
           <div id="map" class="hidden md:block md:w-2/4 h-full rounded-md"></div>
