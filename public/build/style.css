@@ -459,9 +459,21 @@ body {
   --color-secondary: 0 0 0;
 }
 
+.bg-rrss {
+  background-image: url('img/pexels-cottonbro-studio-5082579.webp');
+  background-position: center;
+  background-size: cover;
+}
+
+.bg-dev {
+  background-image: url('img/pexels-thisisengineering-3861958.webp');
+  background-position: center;
+  background-size: cover;
+}
+
 @media (max-width: 768px) {
   .bg-mobile {
-    background-image: url('https://c1prowbmhyo8n8ks.public.blob.vercel-storage.com/landing/office15189548-EblwJ2UEsYRytUgxKDz9gArB5CVC2y.webp');
+    background-image: url('img/office15189548.webp');
     background-position: center;
     background-size: cover;
   }
@@ -609,6 +621,14 @@ body {
   position: fixed;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
 .left-0 {
   left: 0px;
 }
@@ -623,6 +643,18 @@ body {
 
 .z-10 {
   z-index: 10;
+}
+
+.z-0 {
+  z-index: 0;
+}
+
+.-z-10 {
+  z-index: -10;
+}
+
+.z-20 {
+  z-index: 20;
 }
 
 .mx-auto {
@@ -912,30 +944,6 @@ body {
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[url\(\'https\:\/\/c1prowbmhyo8n8ks\.public\.blob\.vercel-storage\.com\/landing\/dev-V7WPoUoxpfv2DB520O6YaA3rkphhPb\.webp\'\)\] {
-  background-image: url('https://c1prowbmhyo8n8ks.public.blob.vercel-storage.com/landing/dev-V7WPoUoxpfv2DB520O6YaA3rkphhPb.webp');
-}
-
-.bg-\[url\(\'https\:\/\/c1prowbmhyo8n8ks\.public\.blob\.vercel-storage\.com\/landing\/pcc-UkfEeYXNvCgkeg05eVRsUYV7yuNKCN\.webp\'\)\] {
-  background-image: url('https://c1prowbmhyo8n8ks.public.blob.vercel-storage.com/landing/pcc-UkfEeYXNvCgkeg05eVRsUYV7yuNKCN.webp');
-}
-
-.bg-\[url\(\'https\:\/\/c1prowbmhyo8n8ks\.public\.blob\.vercel-storage\.com\/landing\/seo-bN8j13WL48iSQzc0vMAN3J6lPXIBxH\.webp\'\)\] {
-  background-image: url('https://c1prowbmhyo8n8ks.public.blob.vercel-storage.com/landing/seo-bN8j13WL48iSQzc0vMAN3J6lPXIBxH.webp');
-}
-
-.bg-\[url\(\'https\:\/\/c1prowbmhyo8n8ks\.public\.blob\.vercel-storage\.com\/landing\/social_media-CerVdnqpRTpgvQdbQkmMxpQ5V34qPo\.webp\'\)\] {
-  background-image: url('https://c1prowbmhyo8n8ks.public.blob.vercel-storage.com/landing/social_media-CerVdnqpRTpgvQdbQkmMxpQ5V34qPo.webp');
-}
-
-.bg-cover {
-  background-size: cover;
-}
-
-.bg-center {
-  background-position: center;
-}
-
 .p-1 {
   padding: 0.25rem;
 }
@@ -1064,6 +1072,11 @@ body {
   --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
   --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
+}
+
+.brightness-50 {
+  --tw-brightness: brightness(.5);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 .transition {

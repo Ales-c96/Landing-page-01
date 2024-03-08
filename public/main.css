@@ -16,10 +16,31 @@
         --color-primary: 244 242 233;
         --color-secondary: 0 0 0;
     }
+
+    .bg-pcc {
+        background-image: url('img/office15189548.webp');
+        background-position: center;
+        background-size: cover;
+    }
+    .bg-seo {
+        background-image: url('img/office15189548.webp');
+        background-position: center;
+        background-size: cover;
+    }
+    .bg-rrss {
+        background-image: url('img/pexels-cottonbro-studio-5082579.webp');
+        background-position: center;
+        background-size: cover;
+    }
+    .bg-dev {
+        background-image: url('img/pexels-thisisengineering-3861958.webp');
+        background-position: center;
+        background-size: cover;
+    }
     
     @media (max-width: 768px) {
         .bg-mobile {
-            background-image: url('https://c1prowbmhyo8n8ks.public.blob.vercel-storage.com/landing/office15189548-EblwJ2UEsYRytUgxKDz9gArB5CVC2y.webp');
+            background-image: url('img/office15189548.webp');
             background-position: center;
             background-size: cover;
         }
